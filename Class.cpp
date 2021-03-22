@@ -15,6 +15,8 @@ namespace winrt::Repro2::implementation
 
     int GroupView::RenderGroup()
     {
-      return 2 * Render();
+      // calling Render calls RenderableView::Render
+      // calling this->Render calls GroupView::Render
+      return 2 * this->Render();
     }
 }
