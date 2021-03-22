@@ -7,7 +7,7 @@ namespace winrt::Repro2::implementation
   struct RenderableView : RenderableViewT<RenderableView>
   {
     RenderableView() = default;
-    int Render();
+    virtual int Render();
   };
 
 }

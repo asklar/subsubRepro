@@ -8,7 +8,7 @@ namespace winrt::Repro2::implementation
   {
     GroupView() = default;
     int RenderGroup();
-    int Render() { return -9; }
+    int Render() override { return -9; }
   };
 
 }

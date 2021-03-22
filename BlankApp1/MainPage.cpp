@@ -12,6 +12,8 @@ namespace winrt::BlankApp1::implementation
     {
         InitializeComponent();
         winrt::Repro2::GroupView g;
+        auto r = g.Render();
+
         auto x = g.RenderGroup();
 
         winrt::Repro2::SubSub s;
