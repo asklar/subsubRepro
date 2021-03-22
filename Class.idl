@@ -8,9 +8,18 @@ namespace Repro2
   }
 
   [default_interface]
-  runtimeclass GroupView : RenderableView
+  unsealed runtimeclass GroupView : RenderableView
   {
     GroupView();
      Int32 RenderGroup();
-  } 
+  }
+
+    [default_interface]
+  runtimeclass SubSub : GroupView
+  {
+    SubSub();
+     Int32 RenderBloop();
+  }
+
+
 }

@@ -2,7 +2,9 @@
 #include "Class.h"
 #include "GroupView.g.cpp"
 #include "RenderableView.g.cpp"
-#include "GroupView.h"
+#include "Subsub.g.cpp"
+
+#include "SubSub.h"
 
 namespace winrt::Repro2::implementation
 {
