@@ -1,0 +1,16 @@
+namespace Repro2
+{
+[default_interface]
+  unsealed runtimeclass RenderableView : Windows.UI.Xaml.FrameworkElement
+  {
+    RenderableView();
+    Int32 Render();
+  }
+
+  [default_interface]
+  runtimeclass GroupView : RenderableView
+  {
+    GroupView();
+     Int32 RenderGroup();
+  } 
+}
